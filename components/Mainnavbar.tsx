@@ -127,6 +127,19 @@ export const Mainnavbar = () => {
               </Link>
             </NavbarMenuItem>
           ))}
+          
+          {/* ADDED: Mobile Admissions Button */}
+          <NavbarMenuItem>
+            <Button
+              as={NextLink}
+              className="w-full text-lg font-semibold bg-primary text-white shadow-lg rounded-full mt-2"
+              href="/admissions"
+              variant="flat"
+              onPress={() => setIsMenuOpen(false)} // Close menu on click
+            >
+              Admissions
+            </Button>
+          </NavbarMenuItem>
         </div>
       </NavbarMenu>
     </HeroUINavbar>
